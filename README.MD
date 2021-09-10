@@ -9,9 +9,9 @@
 
 ## Sysbench Read Only
 ### Before PGO
-SQL statistics:\n
-    queries performed:
-        read:                            13004740
+SQL statistics:<br />
+    queries performed:<br />
+        read:                            13004740<br />
         write:                           0
         other:                           1857820
         total:                           14862560
