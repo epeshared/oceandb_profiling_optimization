@@ -3,6 +3,5 @@
 * https://johnysswlab.com/tune-your-programs-speed-with-profile-guided-optimizations/
 
 ## The file to enable PGO
-* /path/to/oceanbase-master/CMakeLists.txt
 * /path/to/oceanbase-master/deps/oblib/src/CMakeLists.txt
-* /path/to/oceanbase-master/deps/CMakeLists.txt
+* /path/to/oceanbase-master/src/CMakeLists.txt
