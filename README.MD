@@ -9,6 +9,7 @@
 
 ## Sysbench Read Only
 ### Before PGO
+<
 SQL statistics:<br />
     queries performed:<br />
         read:                            13004740<br />
@@ -35,3 +36,4 @@ Threads fairness:
     events (avg/stddev):           14514.2188/524.30
     execution time (avg/stddev):   59.9763/0.00
 
+>
