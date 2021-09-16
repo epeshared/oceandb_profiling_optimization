@@ -12,6 +12,35 @@
 kill -15 `pgrep observer`
 
 ## Sysbench Read Only
+
+### --table_size=1000 --tables=3 --threads=3 --report-interval=3 --time=30 run
+SQL statistics:
+    queries performed:
+        read:                            464464
+        write:                           0
+        other:                           66352
+        total:                           530816
+    transactions:                        33176  (1105.68 per sec.)
+    queries:                             530816 (17690.84 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          30.0035s
+    total number of events:              33176
+
+Latency (ms):
+         min:                                    2.17
+         avg:                                    2.71
+         max:                                   15.36
+         95th percentile:                        3.19
+         sum:                                89964.50
+
+Threads fairness:
+    events (avg/stddev):           11058.6667/165.71
+    execution time (avg/stddev):   29.9882/0.00
+
+
 ### Before PGO
 SQL statistics:<br />
     queries performed:<br />
