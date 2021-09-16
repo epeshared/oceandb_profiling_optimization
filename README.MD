@@ -5,7 +5,7 @@
 ## The file to enable PGO
 * /path/to/oceanbase-master/deps/oblib/src/CMakeLists.txt
 * /path/to/oceanbase-master/src/CMakeLists.txt
-* /path/to/deps/easy/CMakeLists.txt
+* /path/to/oceanbase-master/deps/easy/CMakeLists.txt
 * /path/to/oceanbase-master/cmake/Env.cmake
 
 ## stop the oceanbase
