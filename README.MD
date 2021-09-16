@@ -12,8 +12,8 @@
 kill -15 `pgrep observer`
 
 ## Sysbench Read Only
-
-### --table_size=1000 --tables=3 --threads=3 --report-interval=3 --time=30 run
+### After PGO
+#### --table_size=1000 --tables=3 --threads=3 --report-interval=3 --time=30 run
 SQL statistics:
     queries performed:
         read:                            464464
