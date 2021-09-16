@@ -74,3 +74,40 @@ Latency (ms): <br />
 Threads fairness: <br />
     events (avg/stddev):           221.7344/2.43 <br />
     execution time (avg/stddev):   60.3131/0.19 <br />
+    
+### After PGO
+#### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=60 run
+
+[ 10s ] thds: 64 tps: 15868.45 qps: 253948.12 (r/w/o: 222205.11/0.00/31743.00) lat (ms,95%): 4.82 err/s: 0.00 reconn/s: 0.00<br />
+[ 20s ] thds: 64 tps: 16065.72 qps: 257061.14 (r/w/o: 224929.50/0.00/32131.64) lat (ms,95%): 4.65 err/s: 0.00 reconn/s: 0.00<br />
+[ 30s ] thds: 64 tps: 15939.99 qps: 255035.99 (r/w/o: 223156.02/0.00/31879.97) lat (ms,95%): 4.74 err/s: 0.00 reconn/s: 0.00<br />
+[ 40s ] thds: 64 tps: 16014.62 qps: 256237.08 (r/w/o: 224208.03/0.00/32029.05) lat (ms,95%): 4.65 err/s: 0.00 reconn/s: 0.00<br />
+[ 50s ] thds: 64 tps: 15698.60 qps: 251181.93 (r/w/o: 219784.44/0.00/31397.49) lat (ms,95%): 4.82 err/s: 0.00 reconn/s: 0.00<br />
+[ 60s ] thds: 64 tps: 16149.59 qps: 258377.99 (r/w/o: 226079.11/0.00/32298.88) lat (ms,95%): 4.65 err/s: 0.00 reconn/s: 0.00<br />
+SQL statistics:<br />
+    queries performed:<br />
+        read:                            13408668<br />
+        write:                           0<br />
+        other:                           1915524<br />
+        total:                           15324192<br />
+    transactions:                        957762 (15956.52 per sec.)<br />
+    queries:                             15324192 (255304.39 per sec.)<br />
+    ignored errors:                      0      (0.00 per sec.)<br />
+    reconnects:                          0      (0.00 per sec.)<br />
+<br />
+General statistics:<br />
+    total time:                          60.0216s<br />
+    total number of events:              957762<br />
+<br />
+Latency (ms):
+         min:                                    3.00<br />
+         avg:                                    4.01<br />
+         max:                                   17.49<br />
+         95th percentile:                        4.74<br />
+         sum:                              3838528.83<br />
+<br />
+Threads fairness:<br />
+    events (avg/stddev):           14965.0312/557.41<br />
+    execution time (avg/stddev):   59.9770/0.00<br />
+
+
