@@ -42,28 +42,29 @@ Threads fairness:
 
 
 ### Before PGO
-SQL statistics:<br />
-    queries performed:<br />
-        read:                            13004740<br />
-        write:                           0<br />
-        other:                           1857820<br />
-        total:                           14862560<br />
-    transactions:                        928910 (15475.09 per sec.)<br />
-    queries:                             14862560 (247601.52 per sec.)<br />
-    ignored errors:                      0      (0.00 per sec.)<br />
-    reconnects:                          0      (0.00 per sec.)<br />
+#### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=120 run
+SQL statistics:
+    queries performed:
+        read:                            12161212
+        write:                           0
+        other:                           1737316
+        total:                           13898528
+    transactions:                        868658 (14472.15 per sec.)
+    queries:                             13898528 (231554.42 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
 
-General statistics:<br />
-    total time:                          60.0240s<br />
-    total number of events:              928910<br />
+General statistics:
+    total time:                          60.0211s
+    total number of events:              868658
 
-Latency (ms):<br />
-         min:                                    3.12<br />
-         avg:                                    4.13<br />
-         max:                                   23.51<br />
-         95th percentile:                        4.91<br />
-         sum:                              3838483.15<br />
+Latency (ms):
+         min:                                    3.34
+         avg:                                    4.42
+         max:                                   49.94
+         95th percentile:                        5.18
+         sum:                              3838660.33
 
-Threads fairness:<br />
-    events (avg/stddev):           14514.2188/524.30<br />
-    execution time (avg/stddev):   59.9763/0.00<br />
+Threads fairness:
+    events (avg/stddev):           13572.7812/362.85
+    execution time (avg/stddev):   59.9791/0.00
