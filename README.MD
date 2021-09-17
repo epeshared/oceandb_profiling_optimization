@@ -2,6 +2,10 @@
 ## Guide
 * https://johnysswlab.com/tune-your-programs-speed-with-profile-guided-optimizations/
 
+## OceanBase Configuration
+
+https://github.com/epeshared/OSD-Benchmark
+
 ## The file to enable PGO
 * /path/to/oceanbase-master/deps/oblib/src/CMakeLists.txt
 * /path/to/oceanbase-master/src/CMakeLists.txt
