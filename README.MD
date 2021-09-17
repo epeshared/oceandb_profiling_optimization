@@ -17,7 +17,7 @@ Sysbench cmd:<br />
 
 ### PGO result
 
-![Perf Result](./performance.png)
+![Perf Result](./performance.PNG)
 
 ###  --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=180 run 
 #### Before PGO
