@@ -14,6 +14,11 @@
 ## Sysbench Read Only
 Sysbench cmd:<br />
 <pre>cd /home/zhr/sysbench-1.0.20/src/;sysbench ./lua/oltp_read_only.lua --mysql-host=127.0.0.1 --mysql-port=2881 --mysql-db=test --mysql-user=root@sysbench_tenant --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=180 run</pre>
+
+### PGO result
+
+![Perf Result](./performance.png)
+
 ###  --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=180 run 
 #### Before PGO
 <pre>
