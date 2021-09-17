@@ -9,7 +9,7 @@
 * /path/to/oceanbase-master/cmake/Env.cmake
 
 ## stop the oceanbase
-kill -15 `pgrep observer`
+<pre>kill -15 `pgrep observer`</pre>
 
 ## Sysbench Read Only
 ### Before PGO
