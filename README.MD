@@ -15,23 +15,23 @@ kill -15 `pgrep observer`
 ### Before PGO
 #### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=120 run
 <pre>
-[ 10s ] thds: 64 tps: 14606.87 qps: 233769.08 (r/w/o: 204549.25/0.00/29219.84) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00<br />
-[ 20s ] thds: 64 tps: 14507.08 qps: 232118.00 (r/w/o: 203103.84/0.00/29014.16) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00<br />
-[ 30s ] thds: 64 tps: 14314.29 qps: 229016.48 (r/w/o: 200388.00/0.00/28628.49) lat (ms,95%): 5.18 err/s: 0.00 reconn/s: 0.00<br />
-[ 40s ] thds: 64 tps: 14549.59 qps: 232803.66 (r/w/o: 203704.18/0.00/29099.48) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00<br />
-[ 50s ] thds: 64 tps: 14465.98 qps: 231451.32 (r/w/o: 202519.57/0.00/28931.75) lat (ms,95%): 5.18 err/s: 0.00 reconn/s: 0.00<br />
-[ 60s ] thds: 64 tps: 14412.80 qps: 230605.96 (r/w/o: 201780.05/0.00/28825.91) lat (ms,95%): 5.18 err/s: 0.00 reconn/s: 0.00<br />
-SQL statistics:<br />
-    queries performed:<br />
-        read:                            12161212<br />
-        write:                           0<br />
-        other:                           1737316<br />
-        total:                           13898528<br />
-    transactions:                        868658 (14472.15 per sec.)<br />
-    queries:                             13898528 (231554.42 per sec.)<br />
-    ignored errors:                      0      (0.00 per sec.)<br />
-    reconnects:                          0      (0.00 per sec.)<br />
-<br />
+[ 10s ] thds: 64 tps: 14606.87 qps: 233769.08 (r/w/o: 204549.25/0.00/29219.84) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 64 tps: 14507.08 qps: 232118.00 (r/w/o: 203103.84/0.00/29014.16) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 64 tps: 14314.29 qps: 229016.48 (r/w/o: 200388.00/0.00/28628.49) lat (ms,95%): 5.18 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 64 tps: 14549.59 qps: 232803.66 (r/w/o: 203704.18/0.00/29099.48) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 64 tps: 14465.98 qps: 231451.32 (r/w/o: 202519.57/0.00/28931.75) lat (ms,95%): 5.18 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 64 tps: 14412.80 qps: 230605.96 (r/w/o: 201780.05/0.00/28825.91) lat (ms,95%): 5.18 err/s: 0.00 reconn/s: 0.00
+SQL statistics:
+    queries performed:
+        read:                            12161212
+        write:                           0
+        other:                           1737316
+        total:                           13898528
+    transactions:                        868658 (14472.15 per sec.)
+    queries:                             13898528 (231554.42 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
 General statistics:<br />
     total time:                          60.0211s<br />
     total number of events:              868658<br />
