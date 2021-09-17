@@ -19,6 +19,8 @@ Sysbench cmd:<br />
 
 ![Perf Result](./performance.PNG)
 
+detail result your can ref (./merg.xlsx)
+
 ###  --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=180 run 
 #### Before PGO
 <pre>
