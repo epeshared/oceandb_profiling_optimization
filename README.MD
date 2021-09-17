@@ -12,8 +12,8 @@
 <pre>kill -15 `pgrep observer`</pre>
 
 ## Sysbench Read Only
-### Before PGO
-#### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=120 run
+###  --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=180 run 
+#### Before PGO
 <pre>
 [ 10s ] thds: 64 tps: 14606.87 qps: 233769.08 (r/w/o: 204549.25/0.00/29219.84) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00
 [ 20s ] thds: 64 tps: 14507.08 qps: 232118.00 (r/w/o: 203103.84/0.00/29014.16) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00
@@ -47,8 +47,7 @@ Threads fairness:
     events (avg/stddev):           13572.7812/362.85
     execution time (avg/stddev):   59.9791/0.00
 </pre>
-### During PGO
-#### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=60 run
+#### During PGO
 <pre>
 [ 10s ] thds: 64 tps: 218.55 qps: 3567.25 (r/w/o: 3123.94/0.00/443.31) lat (ms,95%): 337.94 err/s: 0.00 reconn/s: 0.00
 [ 20s ] thds: 64 tps: 236.61 qps: 3785.02 (r/w/o: 3311.60/0.00/473.41) lat (ms,95%): 314.45 err/s: 0.00 reconn/s: 0.00
@@ -83,42 +82,7 @@ Threads fairness:
     events (avg/stddev):           221.7344/2.43 
     execution time (avg/stddev):   60.3131/0.19
 </pre>    
-### After PGO
-#### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=60 run
-<pre>
-[ 10s ] thds: 64 tps: 15868.45 qps: 253948.12 (r/w/o: 222205.11/0.00/31743.00) lat (ms,95%): 4.82 err/s: 0.00 reconn/s: 0.00
-[ 20s ] thds: 64 tps: 16065.72 qps: 257061.14 (r/w/o: 224929.50/0.00/32131.64) lat (ms,95%): 4.65 err/s: 0.00 reconn/s: 0.00
-[ 30s ] thds: 64 tps: 15939.99 qps: 255035.99 (r/w/o: 223156.02/0.00/31879.97) lat (ms,95%): 4.74 err/s: 0.00 reconn/s: 0.00
-[ 40s ] thds: 64 tps: 16014.62 qps: 256237.08 (r/w/o: 224208.03/0.00/32029.05) lat (ms,95%): 4.65 err/s: 0.00 reconn/s: 0.00
-[ 50s ] thds: 64 tps: 15698.60 qps: 251181.93 (r/w/o: 219784.44/0.00/31397.49) lat (ms,95%): 4.82 err/s: 0.00 reconn/s: 0.00
-[ 60s ] thds: 64 tps: 16149.59 qps: 258377.99 (r/w/o: 226079.11/0.00/32298.88) lat (ms,95%): 4.65 err/s: 0.00 reconn/s: 0.00
-SQL statistics:
-    queries performed:
-        read:                            13408668
-        write:                           0
-        other:                           1915524
-        total:                           15324192
-    transactions:                        957762 (15956.52 per sec.)
-    queries:                             15324192 (255304.39 per sec.)
-    ignored errors:                      0      (0.00 per sec.)
-    reconnects:                          0      (0.00 per sec.)
-
-General statistics:
-    total time:                          60.0216s
-    total number of events:              957762
-
-Latency (ms):
-         min:                                    3.00
-         avg:                                    4.01
-         max:                                   17.49
-         95th percentile:                        4.74
-         sum:                              3838528.83
-
-Threads fairness:
-    events (avg/stddev):           14965.0312/557.41
-    execution time (avg/stddev):   59.9770/0.00
-</pre>    
-#### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=180 run
+#### After PGO       
 <pre>
 [ 10s ] thds: 64 tps: 18160.00 qps: 290624.56 (r/w/o: 254298.26/0.00/36326.30) lat (ms,95%): 4.10 err/s: 0.00 reconn/s: 0.00
 [ 20s ] thds: 64 tps: 18545.44 qps: 296710.87 (r/w/o: 259620.10/0.00/37090.77) lat (ms,95%): 3.96 err/s: 0.00 reconn/s: 0.00
