@@ -14,6 +14,7 @@ kill -15 `pgrep observer`
 ## Sysbench Read Only
 ### Before PGO
 #### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=120 run
+<pre>
 [ 10s ] thds: 64 tps: 14606.87 qps: 233769.08 (r/w/o: 204549.25/0.00/29219.84) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00<br />
 [ 20s ] thds: 64 tps: 14507.08 qps: 232118.00 (r/w/o: 203103.84/0.00/29014.16) lat (ms,95%): 5.09 err/s: 0.00 reconn/s: 0.00<br />
 [ 30s ] thds: 64 tps: 14314.29 qps: 229016.48 (r/w/o: 200388.00/0.00/28628.49) lat (ms,95%): 5.18 err/s: 0.00 reconn/s: 0.00<br />
@@ -45,9 +46,10 @@ Latency (ms):<br />
 Threads fairness:<br />
     events (avg/stddev):           13572.7812/362.85<br />
     execution time (avg/stddev):   59.9791/0.00<br />
-
+</pre>
 ### During PGO
 #### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=60 run
+<pre>
 [ 10s ] thds: 64 tps: 218.55 qps: 3567.25 (r/w/o: 3123.94/0.00/443.31) lat (ms,95%): 337.94 err/s: 0.00 reconn/s: 0.00<br />
 [ 20s ] thds: 64 tps: 236.61 qps: 3785.02 (r/w/o: 3311.60/0.00/473.41) lat (ms,95%): 314.45 err/s: 0.00 reconn/s: 0.00<br />
 [ 30s ] thds: 64 tps: 238.90 qps: 3824.67 (r/w/o: 3346.97/0.00/477.70) lat (ms,95%): 308.84 err/s: 0.00 reconn/s: 0.00<br />
@@ -80,10 +82,10 @@ Latency (ms): <br />
 Threads fairness: <br />
     events (avg/stddev):           221.7344/2.43 <br />
     execution time (avg/stddev):   60.3131/0.19 <br />
-    
+</pre>    
 ### After PGO
 #### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=60 run
-
+<pre>
 [ 10s ] thds: 64 tps: 15868.45 qps: 253948.12 (r/w/o: 222205.11/0.00/31743.00) lat (ms,95%): 4.82 err/s: 0.00 reconn/s: 0.00<br />
 [ 20s ] thds: 64 tps: 16065.72 qps: 257061.14 (r/w/o: 224929.50/0.00/32131.64) lat (ms,95%): 4.65 err/s: 0.00 reconn/s: 0.00<br />
 [ 30s ] thds: 64 tps: 15939.99 qps: 255035.99 (r/w/o: 223156.02/0.00/31879.97) lat (ms,95%): 4.74 err/s: 0.00 reconn/s: 0.00<br />
@@ -115,7 +117,7 @@ Latency (ms):
 Threads fairness:<br />
     events (avg/stddev):           14965.0312/557.41<br />
     execution time (avg/stddev):   59.9770/0.00<br />
-    
+</pre>    
 #### --table_size=100000 --tables=30 --threads=64 --report-interval=10 --time=180 run
 <pre>
 [ 10s ] thds: 64 tps: 18160.00 qps: 290624.56 (r/w/o: 254298.26/0.00/36326.30) lat (ms,95%): 4.10 err/s: 0.00 reconn/s: 0.00<br />
